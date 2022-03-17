@@ -1,0 +1,767 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style:none;
+    background-color: rgb(244 244 244);
+    box-sizing: border-box;
+  }
+  .mobile_header{
+      display: none;
+  }
+.header {
+    display: flex;
+
+    width: 100%;
+     
+    background: rgb(51, 53, 69);
+    flex-direction: column;
+}
+.header aside{
+    /* width: 100%; */
+    position: absolute;
+    /* height: 100vh; */
+    /* background-color: red; */
+    z-index: 2;
+}
+.upHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.upHeaderContainer1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+    width: 90%;
+    margin: 5px 0;
+    margin-left: 0px;
+}
+
+.logoBookMyShow img {
+    max-width: 135px;
+}
+
+.searchBar {
+    display: flex;
+
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+
+    cursor: text;
+    width: 70%;
+    max-width: 549px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+
+    align-items: center;
+}
+
+.searchLogo img {
+    width: 20px;
+    height: 20px;
+    margin: 4px 12px;
+    margin-top: 6px;
+}
+
+.searchPlaceholder {
+    width: calc(100% - 50px);
+    border: none;
+    background: white;
+    box-shadow: none;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    outline: 0px;
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.upHeaderContainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 16%;
+    position: relative;
+     
+}
+
+.location {
+    cursor: pointer;
+    display: flex;
+}
+
+.locationName:hover {
+    color: white
+}
+
+.locationName {
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    color: rgb(204, 204, 204);
+    max-width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dropdown img {
+    height: 5px;
+    width: 8px;
+    margin: -5px 0 0 7px;
+}
+.dropdown:hover{
+    color: white
+}
+.signIn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    font-size: 13px;
+    height: 23px;
+    line-height: 25px;
+    width: 67px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgb(248, 68, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+   /* styling Menu Section  */ 
+#menuSection:hover{
+    width: 400px;
+}
+#menuSection{
+    width: 0px ;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    overflow-y:hidden ;
+background-color:red;
+z-index: 1;
+transition: 0.4s;
+background: rgb(241, 241, 241);
+z-index: 4;}
+
+.menuHead{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    opacity: 1;
+     
+    align-items: center;
+    
+    justify-content: space-between;
+    background-color: rgb(46, 49, 71);
+    padding: 10px 16px;
+    width: 100%;
+    min-height: 64px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ .login{
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px 0px;
+    background-color: rgb(255, 255, 255);
+ }
+.login_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 16px;
+   
+}
+.login img{
+    width: 35px;
+    height: 35px;
+}
+.login span{
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 0px;
+    width: auto;
+    opacity: 1;
+    color: rgb(59, 62, 88);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0px 16px;
+}
+.login button{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+    color: rgb(248, 68, 100);
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    opacity: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 8px;
+    width: 147px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 68, 100);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.choices{
+    font-size: 14px;
+    line-height: 60px;
+    user-select: none;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    opacity: 1;
+    width: 100%;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    min-height: 60px;
+    padding: 0px 15px;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+/* downHeaderSection */
+.downHeader {
+    padding: 0px;
+    width: 100%;
+    background: rgb(31, 37, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     
+}
+
+.downHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92vw;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.downHeaderContainer1 {
+    display: flex;
+    margin: 10px 0;
+}
+
+.downHeaderContainer1 a {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0px 10px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(204, 204, 204);
+    transition: all 0.25s
+}
+
+.downHeaderContainer1 a:hover {
+    color: white;
+}
+
+.new {
+    font-size: 8px;
+    color: rgb(231, 54, 77);
+    font-weight: 600;
+    position: absolute;
+    right: 0px;
+    bottom: 90%
+}
+
+.downHeaderContainer2 a {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0px 12px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+        /* Styling carousel section */
+
+        .carousel{
+            max-width: 1240px;
+            width: 83%;
+            margin: 0 auto;
+        }
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+
+      /* Styling Recommendation Section  */
+
+      .recommend{
+          width: 92vw;
+          margin: 0px auto;
+          margin-top: 5rem;
+      }
+      .actives{
+        margin-top: 1rem;
+      }
+      .recommendHeading{
+          display: flex;
+          justify-content: space-between;
+      }
+      .recommendHeading main{
+        /* word-break: break-word; */
+        color: rgb(51, 51, 51);
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.17;
+        margin: 0 0 0 7px;
+      }
+      .recommendHeading aside{
+        margin: 0px;
+        word-break: break-word;
+        color: rgb(220, 53, 88);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+      }
+
+      .recommendContainer{
+          display: flex;
+          overflow: hidden;
+          width: 100%;
+          cursor: pointer;
+          /* height: 200px; */
+      }
+      .moviesBox{
+        width:288px;
+        /* height: 450px; */
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        margin: 10px 0;
+      }
+      .movies{
+          width: 100%;
+          
+      }
+      
+      .moviesImage img{
+          /* width: 232px; */
+          border-radius: 7px;
+      }
+      .name{
+          margin: 7px 0;
+      }
+      .moviesName{
+          text-align: left;
+        margin: 0px 0px 4px;
+        word-break: break-word;
+        color: rgb(34, 34, 34);
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.33;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .moviesGenre{
+text-align: left;
+        margin: 0px;
+        word-break: break-word;
+        color: rgb(102, 102, 102);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+       
+      /* Styling bookMyShow_stream section  */
+
+      .stream{
+      width: 92vw;  
+      margin: 50px auto;
+    }
+    .streamContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .streamContainer img{
+        width: 98%;
+    }
+
+
+             /* Styling Entertainment section  */
+
+    .entertainment{
+        width: 92vw;
+        margin: 20px auto;
+    }
+
+    .entertainment_Heading{
+        word-break: break-word;
+    color: rgb(51, 51, 51);
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+    margin: 70px 0 0 10px;
+    }
+
+    .entertainment_Container{
+        display: flex;
+        overflow: hidden;
+    }
+    .entertainment_box{
+        margin: 10px 16px;
+    }
+    .entertainment_box img{
+               /* height: 220px ; */
+               /* width: 220px; */
+               border-radius: 8px;
+    }
+
+
+     /* Styling the Premier section   */
+     .premier{
+        
+        background-color: rgb(43, 49, 72);
+        margin: 64px 0;
+     }
+     .premier_container{
+        width: 92vw;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+     }
+     .premier_heading{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 25px 18px;
+     }
+     .premier_heading img{
+width: 100%;         
+     }  
+     .premiers_Heading h2{
+        word-break: break-word;
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.17;
+        margin-bottom: 0;
+     }
+     .premiers_Heading{
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.43;
+        margin: 30px 0 0 15px;
+     }
+     .col{
+         color: white;
+     }
+       .trending_container{
+           display: flex;
+           flex-wrap: wrap;
+       }
+     .trendings{
+        position: relative;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 4px;
+        margin: 10px 8px;
+     }
+     .trending_Heading{
+        margin: 0px 0px 2px;
+        white-space: nowrap;
+        color: rgb(248, 68, 100);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+     }
+     .Tgenre{
+        margin: 0px 0px 2px;
+        white-space: nowrap;
+        color: rgb(102, 102, 102);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.43;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+     }
+     .tBox{
+         display: flex;
+         flex-direction: column;
+         padding: 14px 45px 12px 16px;
+     }
+   .home{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+   }
+     .homeNav{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0px auto;
+        padding: 15px;
+        font-size: 12px;
+        color: rgb(170, 171, 172);
+        font-weight: 400;
+        cursor: pointer;
+     }
+     .recommend,.entertainment,.premier_container,.stream{
+         max-width: 1240px;
+     }
+
+
+     /* styling footer  */
+
+     footer{
+        background-color: rgb(49, 48, 53);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+     }
+     .contact{
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        opacity: 1;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0px auto;
+        padding: 15px;
+        -webkit-box-align: center;
+        align-items: center;
+     }
+     
+     .contact_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #contact_container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 82%;
+        margin-left: 41px;
+    }
+     .list_show{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 17%;
+     }
+     .list_show span{
+         font-weight: 600;
+     }
+     .contact_button{
+        flex: 0 0 auto;
+        background-color: rgb(236, 94, 113);
+        border-radius: 3px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+     }
+
+     .support,.supportContainer{
+        display: flex;
+        flex-flow: row wrap;
+        -webkit-box-pack: start;
+        justify-content: start;
+        -webkit-box-align: start;
+        align-items: start;
+        height: auto;
+        overflow: visible;
+        margin: 0px;
+        width: 100%;
+        background-color: rgb(64, 64, 67);
+        padding: 0px;
+           
+     }
+     .supportContainer{
+         margin: 0 auto;
+         width: 80%;
+         max-width: 1280px;
+         padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     }
+     .supportBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .supportBox img{
+         height: 80px ;
+         width: 80px;
+     }
+     .supportBox span{
+        color: rgb(138 138 138);
+        text-align: inherit;
+        line-height: 18px;
+        width: auto;
+        padding: 0px;
+        margin: 10px 0px 0px;
+        flex-basis: auto;
+        font-size: 11px;
+     cursor: pointer;
+     }
+     .supportBox span:hover{
+         color: white;
+     }
+     .shows{
+         padding: 25px;
+     }
+     
+     .showsList{
+        
+        display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    max-width: 1280px;
+     }
+.showsList a {
+    font-size: 11px;
+    color: rgb(127, 127, 127);
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out 0s;
+    margin: 0px 5px 5px 0px;
+    padding-right: 5px;
+    border-right: 1px solid rgb(127, 127, 127);
+}
+.showsList a:hover{
+    color: white;
+}
+.showsHeading{
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    
+    color: rgb(165, 165, 165);
+}
+
+
+/* footer for mobile  */
+.footer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0px 6px;
+    width: 100%;
+    position: fixed;
+    z-index: 49;
+    bottom: 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    background-color: rgb(255, 255, 255);
+    
+}
+.footBox span{
+   
+    border: 0;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    vertical-align: initial;
+}
+.footBox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.footBox img{
+    height: 20px ;
+    width: 20px;
+}
+.smallContainer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 19%;
+}

@@ -1,0 +1,126 @@
+@media (min-width:320px) and (max-width:800px){
+    .footer{
+        display: flex;
+    }
+    .upHeader{
+        display: none;
+    }
+    .downHeader{
+        display: none;
+    }
+    .mobile_headerContainer{
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 49;
+        display: flex;
+        background: rgb(46, 49, 71);
+        justify-content: space-between;
+    }
+              .mobile_header{
+                width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 49;
+    display: flex;
+    background: rgb(46, 49, 71);
+    justify-content: space-between;
+              }
+              .heading{
+                font-size: 24px;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+                letter-spacing: -0.3px;
+              }
+              .cont1 span{
+                display: flex;
+                width: fit-content;
+                -webkit-box-align: center;
+                align-items: center;
+                padding-top: 2px;
+                padding-left: 1px;
+                font-size: 12px;
+                color: rgb(204, 204, 204);
+              }
+              .cont2{
+                  display: flex;
+              }
+              .cont2 button{
+                width: 64px;
+                height: 32px;
+                border-radius: 8px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(248, 68, 100);
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 500;
+                text-align: center;
+                border: 1px solid rgb(248, 68, 100);
+                display: flex;
+                
+                align-items: center;
+                 
+                justify-content: center;
+              }
+              .cont1{
+                padding: 11px 2px 0 14px;
+              }
+              .cont2{
+                  padding: 13px 14px 0 0;
+              }
+              .cont2 img{
+                margin: 0px auto;
+                width: 24px;
+                height: 24px;
+              }
+              .moviesName{
+                  font-size:14px ;
+                  font-weight: 400;
+              }
+              .swiper-button-next,.swiper-button-prev{
+                  display: none;
+              }
+              .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+                bottom: 10px;
+                left: 0;
+                width: 100%;
+                display: none;
+            }
+              .recommend{
+                  margin-top: 1rem;
+              }
+              .recommendHeading main,.entertainment_Heading ,.premiers_Heading h2  {
+                  font-size: 18px;
+                  font-weight: 500;
+              }
+              .entertainment_Heading {
+                  margin:  20px 0 0 10px;
+              }
+              .stream {
+                
+                margin: 1rem auto;
+            }
+            .entertainment {
+                
+                margin: 1rem auto;
+            }
+            .premier {
+                
+                margin: 1rem 0;
+            }
+            .premiers_Heading {
+                
+                margin: 24px 0 0 0px;
+            }
+            .moviesGenre{
+                font-size: 12px;
+            }
+            .active{
+                margin-top: 5rem;
+            }
+            .none{
+                display: none;
+            }
+}
