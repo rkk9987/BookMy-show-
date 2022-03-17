@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets, Plays, Sports, Events & Cinemas near Mumbai - BookMyShow</title>
+    <link rel="icon" type="image/x-icon" href="images/fav_icon.png">
+    <!-- swiper's link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/large.css">
+    <link rel="stylesheet" href="static/mobile.css">
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            width: 232px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="mobile_header">
+            <div class="mobile_headerContainer">
+                <div class="cont1">
+                    <div class="heading">It All Starts Here!</div> <span>Mumbai</span>
+                </div>
+                <div class="cont2"><button>Use App</button></div>
+            </div>
+        </div>
+        <aside>
+            <div id="menuSection">
+                <div class="menuHead">Hey!</div>
+                <div class="login">
+                    <div class="login_container"><img src="images/rewards_login.webp"> <span>Unlock special offers &
+                            great
+                            benefits</span>
+                        <button>login/register</button>
+                    </div>
+                </div>
+                <div class="choices">Notifications</div>
+                <div class="choices">Purchase History</div>
+                <div class="choices">Stream library</div>
+                <div class="choices">Help & Support</div>
+                <div class="choices">Accounts & Settings</div>
+                <div class="choices">Rewards</div>
+                <div class="choices">BookASmile</div>
+            </div>
+        </aside>
+        <div class="upHeader">
+            <div class="upHeaderContainer1">
+                <div class="logoBookMyShow"><img src="images/bokmyshowLogo.png"></div>
+                <div class="searchBar"><span class="searchLogo"><img src="images/search-logo.png"></span>
+                    <span class="searchPlaceholder">Search for Movies, Events, Plays, Sports and Activities</span>
+                </div>
+            </div>
+            <div class="upHeaderContainer2">
+                <div class="location"><span class="locationName">Mumbai</span><span class="dropdown"><img
+                            src="images/drop down.png"></span></div>
+                <div class="signIn">Sign in</div>
+                <div>
+                    <!-- <div class="menuBars"></div>
+                    <div class="menuBars"></div>
+                    <div class="menuBars"></div>
+                 -->
+                    <img id="menu" src="images/kindpng_303160.png">
+                </div>
+            </div>
+        </div>
+        <div class="downHeader">
+            <div class="downHeaderContainer">
+                <div class="downHeaderContainer1">
+                    <a href="">Movies</a>
+                    <a href="">Stream
+                        <div class="new">NEW</div>
+                    </a>
+                    <a href="">Events</a>
+                    <a href="">Plays</a>
+                    <a href="">Sports</a>
+                    <a href="">Activities</a>
+                    <a href="">Buzz</a>
+                </div>
+                <div class="downHeaderContainer2">
+                    <a href="">List Your Show <div class="new">NEW</div></a>
+                    <a href="">Corporate</a>
+                    <a href="">Offers</a>
+                    <a href="">Gift Cards</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="  recommend active actives">
+        <div class="recommendHeading">
+            <main>Recommended Movies</main>
+            <aside>see all</aside>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/radheShyam.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Radhe Shyam</div>
+                            <div class="moviesGenre none ">Drama,Period,Romantic</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/gangubai.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">GanguBai</div>
+                            <div class="moviesGenre none">Biography,Crime,Drama</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/kashmirFiles.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">The Kashmir Files</div>
+                            <div class="moviesGenre none">Drama/Historical</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/bachchanpandey.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Bachchan Pandey</div>
+                            <div class="moviesGenre none">Action,Comedy,Drama</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/paawanKhind.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Pawankhind</div>
+                            <div class="moviesGenre none">Action,Drama,Historical</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/Batman.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">The Batman</div>
+                            <div class="moviesGenre none">Action,Adventure,Crime,Drama</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/jhund.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Jhund</div>
+                            <div class="moviesGenre none">Biography,Drama,Sports</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/Dear.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Dear Father(Gujrati)</div>
+                            <div class="moviesGenre none">Drama,Family</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/dog.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">The Dog</div>
+                            <div class="moviesGenre none">Drama,Comedy</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/Et.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Etharkkum Thunindhavan</div>
+                            <div class="moviesGenre  none">Action,Thriller</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="stream">
+        <stream class="streamContainer">
+            <img src="images/bookMyshow_stream.avif">
+        </stream>
+    </section>
+    <section class="entertainment">
+        <div class="entertainment_Heading">
+            The Best of entertainment
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img1.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img2.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img3.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img4.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img5.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img6.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img7.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img8.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img9.avif"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="entertainment_box"><img src="images/img10.avif"></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="premier">
+        <div class="premier_container">
+            <div class="premier_heading">
+                <img src="images/rupay.avif">
+            </div>
+            <div class="premiers_Heading">
+                <h2>Premieres</h2>
+                <span>Brand new releases every Friday</span>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre1.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">Last Night In Soho</div>
+                                <div class="moviesGenre col">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre2.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">Let Him Go</div>
+                                <div class="moviesGenre col">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre3.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">Disturbing The Peace</div>
+                                <div class="moviesGenre col">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre4.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">The Sparks Brothers</div>
+                                <div class="moviesGenre col">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre5.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">Death Of A Telemarketer</div>
+                                <div class="moviesGenre col">English</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="moviesBox">
+                            <div class="movies">
+                                <div class="moviesImage"><img src="images/pre6.avif"></div>
+
+                            </div>
+                            <div class="name">
+                                <div class="moviesName col">The Miramar Murder</div>
+                                <div class="moviesGenre col">Spanish</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Events Happening Near You</main>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/events1.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Pencil Sketching,Shading for Adults -Hobbystation</div>
+                            <div class="moviesGenre">Watch on Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve2.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Jeeveshu Ahluwalia LIVE In Mumbai</div>
+                            <div class="moviesGenre">Dublin Square,Phoenix Market city:kurla</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve3.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Sunil Grover LIVE In Mumbai</div>
+                            <div class="moviesGenre">Dublin Square,Phoenix Market city:kurla</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve4.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Chembur Comedy Routine</div>
+                            <div class="moviesGenre">Adagio: Chembur</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve5.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">StepinOut Night Market- The Spring Edit Mumbai</div>
+                            <div class="moviesGenre">JW Marriot Hotel Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve6.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">StepinOut Night Market- The Spring Edit Mumbai</div>
+                            <div class="moviesGenre">JW Marriot Hotel Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve7.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Jasleen Royal LIVE by StepinOut in Mumbai</div>
+                            <div class="moviesGenre">Mansion: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve8.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Jasleen Royal LIVE by StepinOut in Mumbai</div>
+                            <div class="moviesGenre">Mansion: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve9.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Shanti People First Time in Mumbai</div>
+                            <div class="moviesGenre">Kitty su,The Lalit: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/eve10.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Nari aur Anari</div>
+                            <div class="moviesGenre">The Huddle Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Online Streaming Events</main>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons1.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">How to Grow Money? Investor Awareness</div>
+                            <div class="moviesGenre">Watch On Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons2.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Weightloss Webinar</div>
+                            <div class="moviesGenre">Watch On Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons3.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Watercolor Florals Painting Workshop with Rooftop</div>
+                            <div class="moviesGenre"> Watch On Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons4.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">xQ Creative Xplorers - Free Trial Class</div>
+                            <div class="moviesGenre">Watch On Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images//ons5.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Data Science</div>
+                            <div class="moviesGenre">Online streaming</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons6.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">PG Diploma In Software Development </div>
+                            <div class="moviesGenre">Online Streaming</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons7.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">2022: SUMMER OF TRANSFORMATION</div>
+                            <div class="moviesGenre">Watch on Youtube</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons8.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Pencil Sketching - Hobbystation</div>
+                            <div class="moviesGenre">Watch on Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons9.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Impasto Texture Knife Painting Workshop with Kits</div>
+                            <div class="moviesGenre">Watch on Zoom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/ons10.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Ganesha- Watercolor Basics Demo Workshop</div>
+                            <div class="moviesGenre">Watch on Zoom</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Outdoor Events</main>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out1.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Sarkha Katihari Hotay</div>
+                            <div class="moviesGenre">Dinanath Mangeshkar Natyagruha: Vile Parle</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out2.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Imagicca Holi Bash</div>
+                            <div class="moviesGenre">Imagicca: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out3.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Mumbai Half Marathon-Bandra</div>
+                            <div class="moviesGenre">Bandra Fort Garden : Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out4.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Colour Splash</div>
+                            <div class="moviesGenre">The Country Club: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out5.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Imagicca Water Park</div>
+                            <div class="moviesGenre">Imagicca Water Park: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out6.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Imagicca Theme park</div>
+                            <div class="moviesGenre">Imagicca Theme park:Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out7.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Colour Splash - Mumbai's Biggest Holi Festival</div>
+                            <div class="moviesGenre">The Country Club: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out8.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Hamleys Play</div>
+                            <div class="moviesGenre">Hamleys Play, Jio World Drive, BKC</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out9.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">COLORLAND HOLI FESTIVAL</div>
+                            <div class="moviesGenre">Bombay Spirits: Thane West</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/out10.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Mumbai Filmcity Tour with Bollywood Park </div>
+                            <div class="moviesGenre">Dadasaheb Phalke Chitranagri: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Laughter Therapy</main>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l1.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Daddy Kool By Atul Khatri - Mumbai</div>
+                            <div class="moviesGenre">Shanmukhananda Hall: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l2.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">That Comedy Club: Bandra</div>
+                            <div class="moviesGenre">Multiple Venues</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l3.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Bas Kar Bassi Feat. Anubhav Singh Bassi</div>
+                            <div class="moviesGenre">Bal Gandharva Rang Mandir: Bandra</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l4.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Jo Bolta Hai Wohi Hota Hai By Harsh Gujral </div>
+                            <div class="moviesGenre">iLeaf Banquet, R Mall Thane : Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l5.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Gaurav Kapoor Live </div>
+                            <div class="moviesGenre">iLeaf Banquet, R Mall Thane : Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l6.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Vipul Goyal Live in Mumbai</div>
+                            <div class="moviesGenre">R City Mall: Ghatkopar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l7.avif  "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Powai Comedy Shuffle</div>
+                            <div class="moviesGenre">The Square: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l8.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">TCC Bandra: Very Late Night Comedy</div>
+                            <div class="moviesGenre">That Comedy Club: Bandra</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l19.avif "></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">TCC Bandra: Apple Is Red by Vaibhav Sethia</div>
+                            <div class="moviesGenre">That Comedy Club: Bandra</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/l10.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">TCC Bandra: EIC Naye Chutkule</div>
+                            <div class="moviesGenre">That Comedy Club: Bandra</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Trending Searches Right Now</main>
+
+        </div>
+        <div class="trending_container">
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">The Kashmir Files </div> <span class="Tgenre">Movies</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Holi Bash</div> <span class="Tgenre">Events</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">RRR</div> <span class="Tgenre">Movies</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Grand Holi 2022</div> <span class="Tgenre">Events</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">The Batman</div> <span class="Tgenre">Movies</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Holi Hai</div> <span class="Tgenre">Events</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Pawankhind</div> <span class="Tgenre">Movies</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Holi Bash</div> <span class="Tgenre">Events</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Tap HOLI FEST 2022</div> <span class="Tgenre">Events</span>
+                </div>
+            </div>
+            <div class="trendings">
+                <div class="tBox">
+                    <div class="trending_Heading">Jhund</div> <span class="Tgenre">Movies</span>
+                </div>
+
+            </div>
+    </section>
+    <section class="recommend">
+        <div class="recommendHeading">
+            <main>Explore Fun Activities</main>
+
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f1.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Colour Splash - Mumbai's Biggest Holi Festival</div>
+                            <div class="moviesGenre">The Country Club: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f2.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Imagicaa Holi Bash</div>
+                            <div class="moviesGenre">Imagicaa: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f3.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">BORA BORA HOLI BASH</div>
+                            <div class="moviesGenre">Bora Bora - MIDC: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f4.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">TAP HOLI FEST 2022</div>
+                            <div class="moviesGenre">Tap: Sakinaka</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f5.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Bounce</div>
+                            <div class="moviesGenre">Bounce India: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f6.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">BEST-Operation of Heritage Tour</div>
+                            <div class="moviesGenre">Dr. S.P.M.Chowk (Museum): Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f7.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">UrbsPrima - Inside the BMC Headquarters</div>
+                            <div class="moviesGenre">Municipal Corporation of Greater Mumbai: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f8.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Balam Pichkari</div>
+                            <div class="moviesGenre">Hotel Kushala Greens: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f9.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Holi Bash Beach Camping Alibaug</div>
+                            <div class="moviesGenre"> Meeting Point Gateway Of India: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="moviesBox">
+                        <div class="movies">
+                            <div class="moviesImage"><img src="images/f10.avif"></div>
+
+                        </div>
+                        <div class="name">
+                            <div class="moviesName">Heritage Tour of Bombay High Court</div>
+                            <div class="moviesGenre">Bombay High Court: Mumbai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <section class="home">
+        <div class="homeNav">Home</div>
+    </section>
+    <footer>
+        <div class="contact">
+            <div class="contact_container">
+                <div id="contact_container">
+                    <div class="list_show"><img src="//in.bmscdn.com/webin/common/icons/hut.svg"><span>List Your
+                            Show</span></div> <span>Got a show, event, activity
+                        or a great experience? Partner with us & get listed on BookMyShow</span>
+                </div>
+                <div class="contact_button">Contact today!</div>
+            </div>
+        </div>
+        <div class="support">
+            <div class="supportContainer">
+                <div class="supportBox"><img src="images/care.png"><span>24//7 CUSTOMER CARE</span></div>
+                <div class="supportBox"><img src="images/ticket.png"><span>RESEND BOOKING CONFIRMATION</span></div>
+                <div class="supportBox"><img src="images/news.png"><span>SUBSCRIBE TO THE NEWSLETTER</span></div>
+            </div>
+        </div>
+        <div class="shows">
+            <div class="showsHeading">MOVIES NOW SHOWING IN MUMBAI</div>
+            <div class="showsList"><a href="">THE KASHMIR FILES</a><a href="">BACHCHAN PANDEY</a><a href="">GANGUBAI
+                    KATHIWADI</a><a href="">PAWANKHIND</a><a href="">THE BATMAN</a><a href="">JHUND</a><a href="">RADHE
+                    SHYAM</a><a href="">DEAR FATHER</a><a href="">JAMES</a><a href="">AMBULANCE</a></div>
+        </div>
+        <div class="shows">
+            <div class="showsHeading">UPCOMING MOVIES IN MUMBAI</div>
+            <div class="showsList"><a href="">Twenty One
+                    Grams</a><a href="">Babbar</a><a href="">Kallan</a><a href="">Kallan</a><a href="">Oruthee</a><a href="">Yutha Satham</a><a href="">Kuthirai
+                    Vaal</a><a href="">#69 Samskar Colony</a><a href="">Samhari</a><a href="">Anandakalyanam</a><a href="">Pathrosinte
+                    Padappukal</a><a href="">Director</a><a href="">Ayisha</a><a href="">Nallamala</a><a href="">Salute</a><a href="">Thattassery
+                    Koottam</a><a href="">Kali Jotta</a><a href="">Hero of
+                    Nation - Chandra Shekhar Azad</a><a href="">Alingan</a><a href="">King Richard</a><a href="">RRR</a></div>
+        </div>
+    </footer>
+    <div class="footer"> <div class="smallContainer"><div class="footBox"><img src="images/my.png"><span>Home</span>
+    </div>
+    <div class="footBox"><img src="images/toppng.com-bull-horn-icon-megaphone-clip-art-388x300.png"> <span>Buzz</span></div>
+    <div class="footBox"><img src="images/profile-icon-png-black-196391.png"> <span>Profile</span></div></div></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="static/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const mediaQuery = window.matchMedia('(max-width:777px )')
+        const mediaQuery2 = window.matchMedia('(min-width:778px )')
+        //  if (mediaQuery.matches) { 
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // }
+        if (mediaQuery.matches) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        }
+    </script>
+</body>
+
+</html>
